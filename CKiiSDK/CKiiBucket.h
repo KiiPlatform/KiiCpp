@@ -17,9 +17,11 @@
 #include "CKiiApp.h"
 
 namespace kiicloud{
+class CKiiQueryHandler;
 
 typedef std::pair<std::vector<CKiiObject>, ErrorPtr> ObjectsAndError;
 typedef std::future<ObjectsAndError> QueryFuture;
+typedef std::shared_ptr<CKiiQueryHandler> QueryHandlerPtr;
 
 //! Handler of bucket query.
 class CKiiQueryHandler {
@@ -58,12 +60,12 @@ class CKiiBucket
 {
 public:
     //! Obtain bucket query handler.
-    static CKiiQueryHandler* query(
-                               const CKiiApp &app,
-                               const std::string &scopeUri,
-                               const std::string &bucketName,
-                               const CKiiQuery &query,
-                               const std::string accessToken);
+    static QueryHandlerPtr query(
+                                 const CKiiApp &app,
+                                 const std::string &scopeUri,
+                                 const std::string &bucketName,
+                                 const CKiiQuery &query,
+                                 const std::string accessToken);
 };
 
 }

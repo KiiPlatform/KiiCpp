@@ -29,6 +29,9 @@ public:
     //! For internal use.
     explicit CKiiQuery(const CKiiQuery &query, const std::string &paginationKey);
 
+    //! Copy constructor
+    CKiiQuery(const CKiiQuery& rhs);
+
     //! Set sort key
     void sortByASC(const std::string& sortKey);
 

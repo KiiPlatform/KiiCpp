@@ -50,10 +50,8 @@ using kiicloud::ObjectsAndError;
     std::string sq = q.toString();
     NSLog(@"query: %s" ,sq.c_str());
 
-
-
-    CKiiQueryHandler *qh = CKiiBucket::query(app, app.appUrl(), std::string("bk1"), q, std::string(""));
-    std::future<ObjectsAndError> fut = qh->nextPage();
+    auto qhp = CKiiBucket::query(app, app.appUrl(), std::string("bk1"), q, std::string(""));
+    std::future<ObjectsAndError> fut = qhp.get()->nextPage();
     // TODO: do more testing. right now, Human see the log.
 }
 

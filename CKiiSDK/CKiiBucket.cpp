@@ -12,8 +12,9 @@
 
 using kiicloud::ObjectsAndError;
 using kiicloud::QueryFuture;
+using kiicloud::QueryHandlerPtr;
 
-kiicloud::CKiiQueryHandler* kiicloud::CKiiBucket::query(
+QueryHandlerPtr kiicloud::CKiiBucket::query(
                                  const CKiiApp &app,
                                  const std::string &scopeUri,
                                  const std::string &bucketName,
@@ -21,7 +22,7 @@ kiicloud::CKiiQueryHandler* kiicloud::CKiiBucket::query(
                                  const std::string accessToken)
 {
     CKiiQueryHandler* qh = new CKiiQueryHandler(app, scopeUri, bucketName, query, accessToken);
-    return qh;
+    return QueryHandlerPtr(qh);
 }
 
 kiicloud::CKiiQueryHandler::CKiiQueryHandler(

@@ -33,6 +33,11 @@ kiicloud::CKiiQuery::CKiiQuery(const CKiiQuery &query, const std::string &pagina
     this->jsonQuery["paginationKey"] = pvPKey;
 }
 
+kiicloud::CKiiQuery::CKiiQuery(const CKiiQuery& rhs)
+:jsonQuery(rhs.jsonQuery)
+{
+}
+
 void::kiicloud::CKiiQuery::sortByASC(const std::string &sortKey)
 {
     picojson::object innerBq = this->jsonQuery["bucketQuery"].get<picojson::object>();

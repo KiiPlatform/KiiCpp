@@ -99,8 +99,8 @@ using kiicloud::UserAndError;
 {
     kiicloud::CKiiQuery q;
     std::string accessToken;
-    kiicloud::CKiiQueryHandler *qh = kiicloud::CKiiBucket::query(app, app.appUrl(), std::string("myBucket"), q, accessToken);
-    auto queryFut = qh->nextPage();
+    auto qhp = kiicloud::CKiiBucket::query(app, app.appUrl(), std::string("myBucket"), q, accessToken);
+    auto queryFut = qhp.get()->nextPage();
     auto resPair = queryFut.get();
     std::vector<kiicloud::CKiiObject> results = resPair.first;
     
@@ -128,10 +128,10 @@ using kiicloud::UserAndError;
     int count = 0;
     kiicloud::CKiiQuery q(kiicloud::CKiiClause(),1);
     std::string accessToken;
-    kiicloud::CKiiQueryHandler *qh = kiicloud::CKiiBucket::query(app, app.appUrl(), std::string("myBucket"), q, accessToken);
+    auto qhp = kiicloud::CKiiBucket::query(app, app.appUrl(), std::string("myBucket"), q, accessToken);
     
-    while (qh->hasNext()) {
-        auto queryFut = qh->nextPage();
+    while (qhp.get()->hasNext()) {
+        auto queryFut = qhp.get()->nextPage();
         auto resultsAndError = queryFut.get();
 
         auto error = resultsAndError.second.get();
