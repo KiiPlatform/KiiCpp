@@ -6,9 +6,33 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		744514A6196FFBF9003F4455 /* CKiiSDKStaticLibAgg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 744514A7196FFBF9003F4455 /* Build configuration list for PBXAggregateTarget "CKiiSDKStaticLibAgg" */;
+			buildPhases = (
+				744514AA196FFD01003F4455 /* ShellScript */,
+				744514AB196FFD0B003F4455 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = CKiiSDKStaticLibAgg;
+			productName = CKiiSDKStaticLibAgg;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		741D1BA41962D0E800CAC78F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7417764019299BD20000C78B /* Security.framework */; };
 		741D1BA51962D11300CAC78F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DF37FA192CB72D005D2E23 /* libz.dylib */; };
+		744514AC196FFD2D003F4455 /* CKiiApp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74B28BA5194046DA0070034D /* CKiiApp.h */; };
+		744514AD196FFD2D003F4455 /* CKiiUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74DF3842192DF82D005D2E23 /* CKiiUser.h */; };
+		744514AE196FFD2D003F4455 /* CKiiError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74DF383A192DF81D005D2E23 /* CKiiError.h */; };
+		744514AF196FFD2D003F4455 /* CKiiLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74BAC6BF19347AC5002D9F1D /* CKiiLog.h */; };
+		744514B1196FFD2D003F4455 /* CKiiObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74B28BC119419FE20070034D /* CKiiObject.h */; };
+		744514B2196FFD2D003F4455 /* CKiiBucket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74B28BC41941A01B0070034D /* CKiiBucket.h */; };
+		744514B3196FFD2D003F4455 /* CKiiQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74B28BC71941A12C0070034D /* CKiiQuery.h */; };
+		744514B4196FFD2D003F4455 /* CKiiClause.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74B28BCA1946B11D0070034D /* CKiiClause.h */; };
+		744514B8197005FA003F4455 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 744514B7197005FA003F4455 /* libcurl.a */; };
 		745BEB13194AE623003A5D2D /* CKiiObjectTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 745BEB12194AE623003A5D2D /* CKiiObjectTests.mm */; };
 		74B28BC219419FE20070034D /* CKiiObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74B28BC019419FE20070034D /* CKiiObject.cpp */; };
 		74B28BC51941A01B0070034D /* CKiiBucket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74B28BC31941A01B0070034D /* CKiiBucket.cpp */; };
@@ -24,7 +48,6 @@
 		74BAC63F1932DA9E002D9F1D /* CKiiUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74DF3842192DF82D005D2E23 /* CKiiUser.h */; };
 		74BAC6401932DA9E002D9F1D /* CKiiError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74DF383A192DF81D005D2E23 /* CKiiError.h */; };
 		74BAC6A3193466F2002D9F1D /* CKiicURLBindings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74BAC6A1193466F2002D9F1D /* CKiicURLBindings.cpp */; };
-		74BAC6B719346B16002D9F1D /* libcurl-iosdev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BAC6B619346B16002D9F1D /* libcurl-iosdev.a */; };
 		74DF3815192DF734005D2E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		74DF3822192DF734005D2E23 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74177662192AFDA10000C78B /* XCTest.framework */; };
 		74DF3823192DF734005D2E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -47,6 +70,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		744514AB196FFD0B003F4455 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/library";
+			dstSubfolderSpec = 0;
+			files = (
+				744514AC196FFD2D003F4455 /* CKiiApp.h in CopyFiles */,
+				744514AD196FFD2D003F4455 /* CKiiUser.h in CopyFiles */,
+				744514AE196FFD2D003F4455 /* CKiiError.h in CopyFiles */,
+				744514AF196FFD2D003F4455 /* CKiiLog.h in CopyFiles */,
+				744514B1196FFD2D003F4455 /* CKiiObject.h in CopyFiles */,
+				744514B2196FFD2D003F4455 /* CKiiBucket.h in CopyFiles */,
+				744514B3196FFD2D003F4455 /* CKiiQuery.h in CopyFiles */,
+				744514B4196FFD2D003F4455 /* CKiiClause.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74DF3812192DF734005D2E23 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +110,16 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7417764019299BD20000C78B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		74177662192AFDA10000C78B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		744514B7197005FA003F4455 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = CKiiSDK/CKiiBindings/curl/libcurl.a; sourceTree = SOURCE_ROOT; };
+		744514B919700633003F4455 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		744514BA19700633003F4455 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		744514BB19700633003F4455 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		744514BC19700633003F4455 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		744514BD19700633003F4455 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		744514BE19700633003F4455 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		744514BF19700633003F4455 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		744514C019700633003F4455 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		744514C119700633003F4455 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
 		745BEB12194AE623003A5D2D /* CKiiObjectTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKiiObjectTests.mm; sourceTree = "<group>"; };
 		74B28BA5194046DA0070034D /* CKiiApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKiiApp.h; sourceTree = "<group>"; };
 		74B28BB8194072CE0070034D /* picojson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = picojson.h; sourceTree = "<group>"; };
@@ -86,16 +136,6 @@
 		74B28BCD194710F20070034D /* CKiiQueryTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKiiQueryTest.mm; sourceTree = "<group>"; };
 		74BAC6A1193466F2002D9F1D /* CKiicURLBindings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CKiicURLBindings.cpp; sourceTree = "<group>"; };
 		74BAC6A2193466F2002D9F1D /* CKiicURLBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKiicURLBindings.h; sourceTree = "<group>"; };
-		74BAC6AC19346B16002D9F1D /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
-		74BAC6AD19346B16002D9F1D /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
-		74BAC6AE19346B16002D9F1D /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
-		74BAC6AF19346B16002D9F1D /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
-		74BAC6B019346B16002D9F1D /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
-		74BAC6B119346B16002D9F1D /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
-		74BAC6B219346B16002D9F1D /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
-		74BAC6B319346B16002D9F1D /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
-		74BAC6B419346B16002D9F1D /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
-		74BAC6B619346B16002D9F1D /* libcurl-iosdev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libcurl-iosdev.a"; sourceTree = "<group>"; };
 		74BAC6BF19347AC5002D9F1D /* CKiiLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKiiLog.h; sourceTree = "<group>"; };
 		74DF37FA192CB72D005D2E23 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		74DF3814192DF734005D2E23 /* libCKiiSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCKiiSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BAC6B719346B16002D9F1D /* libcurl-iosdev.a in Frameworks */,
 				74DF3815192DF734005D2E23 /* Foundation.framework in Frameworks */,
+				744514B8197005FA003F4455 /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,34 +220,18 @@
 		74BAC6AA19346B16002D9F1D /* curl */ = {
 			isa = PBXGroup;
 			children = (
-				74BAC6AB19346B16002D9F1D /* include */,
-				74BAC6B519346B16002D9F1D /* lib */,
+				744514B919700633003F4455 /* curl.h */,
+				744514BA19700633003F4455 /* curlbuild.h */,
+				744514BB19700633003F4455 /* curlrules.h */,
+				744514BC19700633003F4455 /* curlver.h */,
+				744514BD19700633003F4455 /* easy.h */,
+				744514BE19700633003F4455 /* mprintf.h */,
+				744514BF19700633003F4455 /* multi.h */,
+				744514C019700633003F4455 /* stdcheaders.h */,
+				744514C119700633003F4455 /* typecheck-gcc.h */,
+				744514B7197005FA003F4455 /* libcurl.a */,
 			);
 			path = curl;
-			sourceTree = "<group>";
-		};
-		74BAC6AB19346B16002D9F1D /* include */ = {
-			isa = PBXGroup;
-			children = (
-				74BAC6AC19346B16002D9F1D /* curl.h */,
-				74BAC6AD19346B16002D9F1D /* curlbuild.h */,
-				74BAC6AE19346B16002D9F1D /* curlrules.h */,
-				74BAC6AF19346B16002D9F1D /* curlver.h */,
-				74BAC6B019346B16002D9F1D /* easy.h */,
-				74BAC6B119346B16002D9F1D /* mprintf.h */,
-				74BAC6B219346B16002D9F1D /* multi.h */,
-				74BAC6B319346B16002D9F1D /* stdcheaders.h */,
-				74BAC6B419346B16002D9F1D /* typecheck-gcc.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		74BAC6B519346B16002D9F1D /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				74BAC6B619346B16002D9F1D /* libcurl-iosdev.a */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		74DF3816192DF734005D2E23 /* CKiiSDK */ = {
@@ -343,6 +367,7 @@
 			targets = (
 				74DF3813192DF734005D2E23 /* CKiiSDK */,
 				74DF3820192DF734005D2E23 /* CKiiSDKTests */,
+				744514A6196FFBF9003F4455 /* CKiiSDKStaticLibAgg */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +382,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		744514AA196FFD01003F4455 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild_hoge() {\n    xcodebuild \\\n    -target \"CKiiSDK\" \\\n    -project ${PROJECT_NAME}.xcodeproj \\\n    -configuration ${CONFIGURATION} \\\n    -sdk $1 clean build\n}\n\nBUILD_DIR=\"${SRCROOT}/build\"\nLIB_DIR=\"${SRCROOT}/library\"\nLIB_NAME=\"libCKiiSDK.a\"\n\nIOS_LIB=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${LIB_NAME}\"\nSIM_LIB=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${LIB_NAME}\"\nDEST_LIB=\"${LIB_DIR}/${LIB_NAME}\"\n\n\n# remove dir\nrm -rf \"${BUILD_DIR}\"\nrm -rf \"${LIB_DIR}\"\n\n# 1. xcodebuild\nxcodebuild_hoge iphoneos\nxcodebuild_hoge iphonesimulator\n\n# mkdir\nmkdir -p \"${LIB_DIR}\"\n\n# 2. lipo\nlipo \"${IOS_LIB}\" \"${SIM_LIB}\" -create -output \"${DEST_LIB}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74DF3810192DF734005D2E23 /* Sources */ = {
@@ -406,10 +447,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		744514A8196FFBF9003F4455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		744514A9196FFBF9003F4455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
 		74DF3831192DF735005D2E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -440,10 +506,12 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CKIiSDK/CKiiBindings/curl/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CKiiSDK/CKiiBindings/curl/lib",
+					"$(PROJECT_DIR)/CKiiSDK/CKiiBindings/curl",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,7 +523,7 @@
 		74DF3832192DF735005D2E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -482,10 +550,12 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CKIiSDK/CKiiBindings/curl/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CKiiSDK/CKiiBindings/curl/lib",
+					"$(PROJECT_DIR)/CKiiSDK/CKiiBindings/curl",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +690,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		744514A7196FFBF9003F4455 /* Build configuration list for PBXAggregateTarget "CKiiSDKStaticLibAgg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744514A8196FFBF9003F4455 /* Debug */,
+				744514A9196FFBF9003F4455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		74DF3830192DF735005D2E23 /* Build configuration list for PBXNativeTarget "CKiiSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
